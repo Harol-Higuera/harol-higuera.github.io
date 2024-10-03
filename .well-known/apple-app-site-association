@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [ 
+          "88YHKJ27B7.jp.co.tokyo-dome.tokyodomecity.dev",
+          "88YHKJ27B7.jp.co.tokyo-dome.tokyodomecity.stg",
+          "88YHKJ27B7.jp.co.tokyo-dome.tokyodomecity"
+        ],
+        "components": [
+          {
+            "/": "/*",
+            "comment": "Any comments"
+          }
+        ]
+      }
+    ]
+  }
+}
