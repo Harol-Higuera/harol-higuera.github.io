@@ -1,0 +1,14 @@
+[
+   {
+      "relation":[
+         "delegate_permission/common.handle_all_urls"
+      ],
+      "target":{
+         "namespace":"android_app",
+         "package_name":"jp.co.tokyo-dome.tokyodomecity",
+         "sha256_cert_fingerprints":[
+            "8D:2C:A6:6D:36:3F:A6:A5:3C:FD:A9:66:13:6D:A3:0C:D4:D7:48:06:DD:B5:B5:AE:48:84:89:EF:CC:59:7F:36"
+         ]
+      }
+   }
+]
