@@ -4,7 +4,33 @@
          "delegate_permission/common.handle_all_urls"
       ],
       "target":{
-         "namespace":"android_app",
+         "namespace":"tdc_app_dev",
+         "package_name":"jp.co.tokyo_dome.tokyodomecity.dev",
+         "sha256_cert_fingerprints":[
+            "8D:2C:A6:6D:36:3F:A6:A5:3C:FD:A9:66:13:6D:A3:0C:D4:D7:48:06:DD:B5:B5:AE:48:84:89:EF:CC:59:7F:36",
+            "B1:E5:36:35:38:BD:B9:69:3D:D2:1B:ED:0C:A2:10:A5:D9:C2:A7:5C:C1:32:68:AA:2A:B1:1A:2A:F9:1B:4F:C5"
+         ]
+      }
+   },
+      {
+      "relation":[
+         "delegate_permission/common.handle_all_urls"
+      ],
+      "target":{
+         "namespace":"tdc_app_stg",
+         "package_name":"jp.co.tokyo_dome.tokyodomecity.stg",
+         "sha256_cert_fingerprints":[
+            "8D:2C:A6:6D:36:3F:A6:A5:3C:FD:A9:66:13:6D:A3:0C:D4:D7:48:06:DD:B5:B5:AE:48:84:89:EF:CC:59:7F:36",
+            "B1:E5:36:35:38:BD:B9:69:3D:D2:1B:ED:0C:A2:10:A5:D9:C2:A7:5C:C1:32:68:AA:2A:B1:1A:2A:F9:1B:4F:C5"
+         ]
+      }
+   },
+      {
+      "relation":[
+         "delegate_permission/common.handle_all_urls"
+      ],
+      "target":{
+         "namespace":"tdc_app",
          "package_name":"jp.co.tokyo_dome.tokyodomecity",
          "sha256_cert_fingerprints":[
             "8D:2C:A6:6D:36:3F:A6:A5:3C:FD:A9:66:13:6D:A3:0C:D4:D7:48:06:DD:B5:B5:AE:48:84:89:EF:CC:59:7F:36",
