@@ -44,6 +44,10 @@
       const androidUrl = `https://play.google.com/store/apps/details?id=jp.co.tokyo_dome.tokyodomecity&utm_source=${param1}&utm_medium=${param2}`;
       const siteUrl = `https://www.tokyo-dome.co.jp/app/?utm_source=${param1}&utm_medium=${param2}`;
 
+      console.log("iOS URL:", iOSUrl);
+      console.log("Android URL:", androidUrl);
+      console.log("Site URL:", siteUrl);
+
       setTimeout(function () {
         window.location =
           getOS() === "iOS"
