@@ -63,7 +63,6 @@
 
       setTimeout(function () {
 
-        window.location =
          /**
           * Track GA Event
           */
@@ -75,7 +74,9 @@
           });
 
           console.log("Track GA Event:", 'dynamiclink_tapped');
-
+          console.log("getOS:", getOS());
+        
+        window.location =
           getOS() === "iOS"
             ? iOSUrl
             : getOS() === "Android"
