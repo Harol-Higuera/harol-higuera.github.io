@@ -75,7 +75,8 @@
 
           console.log("Track GA Event:", 'dynamiclink_tapped');
           console.log("getOS:", getOS());
-        
+
+          return;
         window.location =
           getOS() === "iOS"
             ? iOSUrl
