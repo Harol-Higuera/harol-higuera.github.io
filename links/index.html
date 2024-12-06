@@ -3,7 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ローディング中...</title>
+  <title> Redirectiong...</title>
+  <!-- GAトラッキングコード -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    //Dev
+    gtag('config', 'G-ZD6PPEYZYN');
+    //PROD
+    //gtag('config', 'G-N844EWQXT3');
+  </script>
 </head>
 <body>
   <script>
@@ -51,7 +62,20 @@
       console.log("Site URL:", siteUrl);
 
       setTimeout(function () {
+
         window.location =
+         /**
+          * Track GA Event
+          */
+          gtag('event', 'dynamiclink_tapped', {
+          'screen_name': '',
+          'id': params.get('param_id') || '',
+          'campaign': params.get('utm_source') || '',
+          'medium': params.get('utm_medium') || ''
+          });
+
+          console.log("Track GA Event:", 'dynamiclink_tapped');
+
           getOS() === "iOS"
             ? iOSUrl
             : getOS() === "Android"
