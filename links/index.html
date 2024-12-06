@@ -67,11 +67,11 @@
          /**
           * Track GA Event
           */
-          gtag('event', 'dynamiclink_tapped', {
+         gtag('event', 'dynamiclink_tapped', {
           'screen_name': '',
-          'id': params.get('param_id') || '',
-          'campaign': params.get('utm_source') || '',
-          'medium': params.get('utm_medium') || ''
+          'id': param_id,
+          'campaign': utm_source,
+          'medium': utm_medium
           });
 
           console.log("Track GA Event:", 'dynamiclink_tapped');
