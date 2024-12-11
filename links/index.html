@@ -66,14 +66,14 @@
          /**
           * Track GA Event
           */
-         gtag('event', 'dynamiclink_tapped', {
+         gtag('event', 'dynamic_link_tapped', {
           'screen_name': '',
           'id': param_id,
           'campaign': utm_source,
           'medium': utm_medium
           });
 
-          console.log("Track GA Event:", 'dynamiclink_tapped');
+          console.log("Track GA Event:", 'dynamic_link_tapped');
           console.log("getOS:", getOS());
 
         window.location =
