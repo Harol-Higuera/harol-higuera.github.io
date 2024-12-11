@@ -50,8 +50,6 @@
 
     window.onload = function () {
       const { screen_to_show, param_id,utm_source,utm_medium } = getUrlParams();
-
-      console.log("onload1:", '1');
       
       const iOSUrl = `https://apps.apple.com/app/apple-store/id6473886466?screen_to_show=${screen_to_show}&param_id=${param_id}&utm_source=${utm_source}&utm_medium=${utm_medium}`;
       const androidUrl = `https://play.google.com/store/apps/details?id=jp.co.tokyo_dome.tokyodomecity&screen_to_show=${screen_to_show}&param_id=${param_id}&utm_source=${utm_source}&utm_medium=${utm_medium}`;
@@ -75,16 +73,17 @@
   
             console.log("Track GA Event:", 'dynamic_link_tapped');
             console.log("getOS:", getOS());
-            return;
             /**
             * Delay for GA event finish
             */
             setTimeout(function () {
               const os = getOS();
-              window.location =
-                os === "iOS" ? iOSUrl :
-                os === "Android" ? androidUrl :
-                siteUrl;
+              /**
+              * window.location =
+               *  os === "iOS" ? iOSUrl :
+                * os === "Android" ? androidUrl :
+               *  siteUrl;
+                */
           
               console.log("Redirected to:", os === "iOS" ? iOSUrl :
                 os === "Android" ? androidUrl : siteUrl);
