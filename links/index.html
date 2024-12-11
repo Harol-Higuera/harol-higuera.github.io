@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Redirectiong...</title>
+  <title> Redirecting...</title>
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBFBWQH75K"></script>
 <script>
@@ -78,12 +78,11 @@
             */
             setTimeout(function () {
               const os = getOS();
-              /**
-              * window.location =
-               *  os === "iOS" ? iOSUrl :
-                * os === "Android" ? androidUrl :
-               *  siteUrl;
-                */
+              
+              window.location =
+               os === "iOS" ? iOSUrl :
+                os === "Android" ? androidUrl :
+                 siteUrl;
           
               console.log("Redirected to:", os === "iOS" ? iOSUrl :
                 os === "Android" ? androidUrl : siteUrl);
